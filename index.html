@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드 웹 배경</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 네비 */
+        body {
+            font-family: sans-serif;
+        }
+
+        nav {
+            font-size: 21px;
+            background-color: #ed1c24;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            overflow: hidden;
+            padding: 0 50px;
+    }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+    
+        .menu-cha {
+            position: relative;
+            cursor: pointer;
+            font-weight: bold;
+            list-style: none;
+        }
+    
+        .menu-cha span {
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            transition: transform 1s ease;
+        }
+        
+        .menu-cha .img_box{
+           width: 100px;
+           height: 50px;
+           position: relative;
+           overflow: hidden;
+        }
+        .menu-cha img.character {
+            position: relative;
+            width: 60px;
+            transform: translateY(120%);
+            transition: transform 0.3s ease;
+        }
+       
+        .menu-cha:hover span {
+            transform: translateY(-20px);
+        }
+        .menu li:nth-of-type(1):hover .img_box{
+            height: 50px;
+            overflow: visible
+        }
+        .menu-cha:hover img.character {
+            transform: translateY(0%) scale(1);
+        }
+    
+        .logo img {
+            width: 80px;
+        }
+    
+        .user-menu {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            font-size: 14px;
+            margin-right: 5px;
+        } 
+        
+        .user-menu img {
+            width: 20px; /* 원하는 사이즈 */
+            height: auto;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .logo img{
+            margin-right: 205px !important;
+        }
+        .menu-cha {
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+            float: left;
+        }
+    
+        /* 배경 */
+        section {
+            width: 100%;
+            height: 960px;
+            background-size: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 네비 -->
+    <nav>
+        <div class="menu">
+            <li class="menu-cha">
+                <span>Mc'story</span>
+                <div class="img_box">
+                    <img src="img/nav/cha.png" class="character" alt="캐릭터1">
+                </div>
+            </li>
+            <li class="menu-cha">
+                <span>MENU</span>
+                <div class="img_box">
+                    <img src="img/nav/cha.png" class="character" alt="캐릭터2">
+                </div>
+            </li>
+            <li class="menu-cha">
+                <span>Mc'DT</span>
+                <div class="img_box">
+                    <img src="img/nav/cha.png" class="character" alt="캐릭터3">
+                </div>
+            </li>
+            <li class="menu-cha">
+                <span>EVENT</span>
+                <div class="img_box">
+                    <img src="img/nav/cha.png" class="character" alt="캐릭터4">
+                </div>
+            </li>
+        </div>
+
+        <div class="logo">
+            <img src="img/nav/logo1.png" alt="로고">
+        </div>
+
+        <div class="user-menu">
+            <div><img src="img/nav/login.png" alt="">로그인</div>
+            <div><img src="img/nav/cart.png" alt="">장바구니</div>
+        </div>
+    </nav>
+<!-- 배경 -->
+    <div id="wrapper">
+        <section><img src="img/bg/1_video.png" alt=""></section>
+        <section><img src="img/bg/2_main_store.png" alt=""></section>
+        <section><img src="img/bg/3_main_store.png" alt=""></section>
+        <section><img src="img/bg/4.main_menu.png" alt=""></section>
+        <section><img src="img/bg/5.main_menu.png" alt=""></section>
+        <section><img src="img/bg/6.main_event.png" alt=""></section>
+        <section><img src="img/bg/7.footer.png" alt=""></section>
+        <section><img src="img/bg/8.footer.png" alt=""></section>
+    </div>
+</body>
+</html>
